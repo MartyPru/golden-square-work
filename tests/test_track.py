@@ -2,12 +2,19 @@ from lib.track import *
 
 """
 If doesn't match to track
-returns false
+returns False
 """
 def test_returns_false_for_no_match():
     track = Track('Self Care', 'Mac Miller')
     assert track.matches('Come Back to Earth') == False
 
+"""
+If doesn't match to artist
+returns False
+"""
+def test_returns_false_for_no_match():
+    track = Track('Self Care', 'Mac Miller')
+    assert track.matches('Kendrick Lamar') == False
 
 """
 Correctly matches title
