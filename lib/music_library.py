@@ -11,6 +11,6 @@ class MusicLibrary:
     def search(self, keyword):
         for track in self.tracks:
             track.matches(keyword)
-        matching = [f"{track.title} by {track.artist}" for track in self.tracks if track.matches() == True]
+        matching = [track for track in self.tracks if track.matches() == True]
         return matching
         
