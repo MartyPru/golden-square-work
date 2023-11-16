@@ -1,6 +1,3 @@
-import time
-import requests
-
 class TimeError:
     def __init__(self, requester, time):
         self.requests = requester
